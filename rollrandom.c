@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 int * board;
 int size;
@@ -189,6 +190,7 @@ void menu(){
 
 int main(){
 	title();
+	srand(time(NULL));
 	menu();
 	system("pause");
 	return 0;
